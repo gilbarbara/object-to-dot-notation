@@ -16,7 +16,7 @@
   "files": [
     "es",
     "lib",
-    "index.js"
+    "src"
   ],
   "license": "MIT",
   "keywords": [
