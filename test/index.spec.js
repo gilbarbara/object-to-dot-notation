@@ -4,10 +4,11 @@ describe('object-to-dot-notation', () => {
   it('should throw an error with incorrect param', () => {
     expect(() => objectToDotNotation()).toThrow();
     expect(() => objectToDotNotation([])).toThrow();
-    expect(() => objectToDotNotation('test')).toThrow();
   });
 
   it('should return a proper string', () => {
+    expect(objectToDotNotation('test')).toBe('test');
+
     expect(objectToDotNotation({
       machine: {
         lights: {

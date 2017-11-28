@@ -9,6 +9,10 @@ import isObject from 'is-plain-obj';
  * @return {string}
  */
 function ObjectToDotNotation(obj, dots = []) {
+  if (typeof obj === 'string') {
+    return obj;
+  }
+
   if (!isObject(obj)) {
     throw new Error('the first paramater must be an object');
   }
