@@ -1,0 +1,25 @@
+{
+  "presets": [
+    ["env", {
+      "useBuiltIns": true,
+      "modules": false,
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "stage-1"
+  ],
+  "env": {
+    "commonjs": {
+      "plugins": [
+        ["transform-es2015-modules-commonjs", { "loose": true }]
+      ]
+    },
+    "test": {
+      "plugins": [
+        "transform-es2015-modules-commonjs"
+      ],
+      "sourceMaps": "both"
+    }
+  }
+}
