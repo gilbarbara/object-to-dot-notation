@@ -8,7 +8,7 @@ import isObject from 'is-plain-obj';
  *
  * @return {string}
  */
-function ObjectToDotNotation(obj, dots = []) {
+export default function ObjectToDotNotation(obj, dots = []) {
   if (typeof obj === 'string') {
     return obj;
   }
@@ -30,8 +30,4 @@ function ObjectToDotNotation(obj, dots = []) {
   });
 
   return dots.join('.');
-}
-
-export default function (obj) {
-  return ObjectToDotNotation(obj);
 }
