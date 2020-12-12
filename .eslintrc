@@ -1,7 +1,28 @@
 {
-  "extends": "airbnb-base",
-  "parser": "babel-eslint",
+	"extends": [
+		"airbnb-base",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/typescript",
+		"plugin:prettier/recommended",
+		"prettier/standard"
+	],
+	"parser": "@typescript-eslint/parser",
   "env": {
-    "jest": true
-  }
+		"es6": true,
+		"jest": true,
+		"node": true
+  },
+	"overrides": [
+		{
+			"files": ["src/**/*.spec.ts?(x)"],
+			"rules": {
+				"no-console": "off",
+				"@typescript-eslint/ban-ts-comment": "off"
+			}
+		}
+	],
+	"plugins": ["prettier"],
+	"rules": {
+		"import/extensions": ["warn", "never"]
+	}
 }
