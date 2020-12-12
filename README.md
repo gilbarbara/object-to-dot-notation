@@ -10,15 +10,13 @@ Convert simple objects to dot notation
 npm i object-to-dot-notation
 ```
 
-
-
 ```javascript
-const otdn = require('object-to-dot-notation');
+const dotNotation = require('object-to-dot-notation');
 
-const path = otdn({
+const path = dotNotation({
   name: {
 	state: {
-	  on: { 
+	  on: {
 		red: "walk"
 	  }
 	}
