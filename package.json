@@ -1,6 +1,6 @@
 {
   "name": "object-to-dot-notation",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Convert simple objects to dot notation",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "keywords": [
